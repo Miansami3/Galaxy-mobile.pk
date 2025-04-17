@@ -1,0 +1,1264 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galaxy Mobile.pk - Best Mobile Shop in Pakistan</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+
+        /* ===== Global Styles ===== */
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+            font-family: 'Arial', sans-serif;
+
+        }
+
+        body {
+
+            background-color: #f5f5f5;
+
+        }
+
+        .container {
+
+            width: 90%;
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+        }
+
+        .btn {
+
+            display: inline-block;
+
+            background: #ffcc00;
+
+            color: #333;
+
+            padding: 0.8rem 1.5rem;
+
+            text-decoration: none;
+
+            border-radius: 5px;
+
+            font-weight: bold;
+
+            transition: background 0.3s;
+
+        }
+
+        .btn:hover {
+
+            background: #ffdb4d;
+
+        }
+
+        .section-title {
+
+            text-align: center;
+
+            margin-bottom: 2rem;
+
+            font-size: 2rem;
+
+            color: #333;
+
+        }
+
+
+
+        /* ===== Header Styles ===== */
+
+        header {
+
+            background: linear-gradient(135deg, #6e48aa, #9d50bb);
+
+            color: white;
+
+            padding: 1rem 0;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            position: fixed;
+
+            width: 100%;
+
+            top: 0;
+
+            z-index: 1000;
+
+        }
+
+        .header-content {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        .logo {
+
+            font-size: 1.8rem;
+
+            font-weight: bold;
+
+        }
+
+        nav ul {
+
+            display: flex;
+
+            list-style: none;
+
+        }
+
+        nav ul li {
+
+            margin-left: 1.5rem;
+
+        }
+
+        nav ul li a {
+
+            color: white;
+
+            text-decoration: none;
+
+            font-weight: 500;
+
+            transition: color 0.3s;
+
+        }
+
+        nav ul li a:hover {
+
+            color: #ffcc00;
+
+        }
+
+
+
+        /* ===== Page Content Styles ===== */
+
+        .main-content {
+
+            margin-top: 80px;
+
+            min-height: calc(100vh - 160px);
+
+        }
+
+
+
+        /* ===== Home Page Styles ===== */
+
+        .hero {
+
+            background: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+
+            height: 60vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            color: white;
+
+            position: relative;
+
+        }
+
+        .hero::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.6);
+
+        }
+
+        .hero-content {
+
+            position: relative;
+
+            z-index: 1;
+
+        }
+
+        .hero h1 {
+
+            font-size: 3rem;
+
+            margin-bottom: 1rem;
+
+        }
+
+        .hero p {
+
+            font-size: 1.2rem;
+
+            margin-bottom: 2rem;
+
+        }
+
+        .mobile-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+            gap: 2rem;
+
+            padding: 2rem 0;
+
+        }
+
+        .mobile-card {
+
+            background: white;
+
+            border-radius: 10px;
+
+            overflow: hidden;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            transition: transform 0.3s;
+
+        }
+
+        .mobile-card:hover {
+
+            transform: translateY(-10px);
+
+        }
+
+        .mobile-img {
+
+            width: 100%;
+
+            height: 200px;
+
+            object-fit: cover;
+
+        }
+
+        .mobile-info {
+
+            padding: 1.5rem;
+
+        }
+
+        .mobile-name {
+
+            font-size: 1.2rem;
+
+            margin-bottom: 0.5rem;
+
+            color: #333;
+
+        }
+
+        .mobile-price {
+
+            font-weight: bold;
+
+            color: #6e48aa;
+
+            margin-bottom: 0.5rem;
+
+        }
+
+        .mobile-desc {
+
+            color: #666;
+
+            margin-bottom: 1rem;
+
+            font-size: 0.9rem;
+
+        }
+
+
+
+        /* ===== About Page Styles ===== */
+
+        .about-content {
+
+            padding: 4rem 0;
+
+            text-align: center;
+
+        }
+
+        .about-content h2 {
+
+            font-size: 2.5rem;
+
+            margin-bottom: 2rem;
+
+            color: #6e48aa;
+
+        }
+
+        .about-content p {
+
+            font-size: 1.1rem;
+
+            line-height: 1.6;
+
+            margin-bottom: 1.5rem;
+
+            max-width: 800px;
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+        }
+
+
+
+        /* ===== Products Page Styles ===== */
+
+        .products-container {
+
+            padding: 2rem 0;
+
+        }
+
+
+
+        /* ===== Contact Page Styles ===== */
+
+        .contact-content {
+
+            padding: 4rem 0;
+
+        }
+
+        .contact-info {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+
+            margin-bottom: 3rem;
+
+        }
+
+        .contact-card {
+
+            flex: 1;
+
+            min-width: 250px;
+
+            background: white;
+
+            padding: 2rem;
+
+            margin: 1rem;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            text-align: center;
+
+        }
+
+        .contact-card i {
+
+            font-size: 2rem;
+
+            color: #6e48aa;
+
+            margin-bottom: 1rem;
+
+        }
+
+        .contact-card h3 {
+
+            margin-bottom: 1rem;
+
+            color: #333;
+
+        }
+
+        .contact-card p, .contact-card a {
+
+            color: #666;
+
+            margin-bottom: 0.5rem;
+
+            text-decoration: none;
+
+        }
+
+        .contact-form {
+
+            background: white;
+
+            padding: 2rem;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            max-width: 600px;
+
+            margin: 0 auto;
+
+        }
+
+        .form-group {
+
+            margin-bottom: 1.5rem;
+
+        }
+
+        .form-group label {
+
+            display: block;
+
+            margin-bottom: 0.5rem;
+
+            color: #333;
+
+            font-weight: 500;
+
+        }
+
+        .form-group input, .form-group textarea {
+
+            width: 100%;
+
+            padding: 0.8rem;
+
+            border: 1px solid #ddd;
+
+            border-radius: 5px;
+
+            font-size: 1rem;
+
+        }
+
+        .form-group textarea {
+
+            height: 150px;
+
+        }
+
+        .submit-btn {
+
+            background: #6e48aa;
+
+            color: white;
+
+            border: none;
+
+            padding: 0.8rem 1.5rem;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+            font-size: 1rem;
+
+            transition: background 0.3s;
+
+        }
+
+        .submit-btn:hover {
+
+            background: #9d50bb;
+
+        }
+
+
+
+        /* ===== Auth Pages Styles ===== */
+
+        .auth-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            min-height: 70vh;
+
+            padding: 2rem 0;
+
+        }
+
+        .auth-form {
+
+            background: white;
+
+            padding: 2rem;
+
+            border-radius: 10px;
+
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            width: 100%;
+
+            max-width: 500px;
+
+        }
+
+        .auth-form h2 {
+
+            text-align: center;
+
+            margin-bottom: 2rem;
+
+            color: #6e48aa;
+
+        }
+
+        .auth-link {
+
+            text-align: center;
+
+            margin-top: 1.5rem;
+
+        }
+
+        .auth-link a {
+
+            color: #6e48aa;
+
+            text-decoration: none;
+
+            font-weight: 500;
+
+        }
+
+        .auth-link a:hover {
+
+            text-decoration: underline;
+
+        }
+
+
+
+        /* ===== Footer Styles ===== */
+
+        footer {
+
+            background: #333;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 2rem 0;
+
+            margin-top: 2rem;
+
+        }
+
+        .footer-content {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+
+        }
+
+        .footer-section {
+
+            flex: 1;
+
+            min-width: 250px;
+
+            margin-bottom: 1rem;
+
+        }
+
+        .footer-section h3 {
+
+            margin-bottom: 1rem;
+
+            font-size: 1.2rem;
+
+        }
+
+        .footer-section p, .footer-section a {
+
+            color: #bbb;
+
+            margin-bottom: 0.5rem;
+
+            display: block;
+
+            text-decoration: none;
+
+        }
+
+        .footer-section a:hover {
+
+            color: #ffcc00;
+
+        }
+
+        .social-icons a {
+
+            display: inline-block;
+
+            margin-right: 1rem;
+
+            color: white;
+
+            font-size: 1.5rem;
+
+        }
+
+        .copyright {
+
+            margin-top: 2rem;
+
+            padding-top: 1rem;
+
+            border-top: 1px solid #555;
+
+        }
+
+
+
+        /* ===== Responsive Styles ===== */
+
+        @media (max-width: 768px) {
+
+            .header-content {
+
+                flex-direction: column;
+
+                text-align: center;
+
+            }
+
+            nav ul {
+
+                margin-top: 1rem;
+
+            }
+
+            nav ul li {
+
+                margin: 0 0.5rem;
+
+            }
+
+            .hero h1 {
+
+                font-size: 2rem;
+
+            }
+
+            .contact-info {
+
+                flex-direction: column;
+
+            }
+
+        }
+
+
+
+        /* ===== Tab System Styles ===== */
+
+        .page {
+
+            display: none;
+
+        }
+
+        .page.active {
+
+            display: block;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ===== Header ===== -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="header-content">
+
+                <div class="logo">Galaxy Mobile.pk</div>
+
+                <nav>
+
+                    <ul>
+
+                        <li><a href="#" onclick="showPage('home')">Home</a></li>
+
+                        <li><a href="#" onclick="showPage('products')">Products</a></li>
+
+                        <li><a href="#" onclick="showPage('about')">About Us</a></li>
+
+                        <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+
+                        <li><a href="#" onclick="showPage('signup')">Sign Up</a></li>
+
+                        <li><a href="#" onclick="showPage('login')">Login</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ===== Main Content ===== -->
+
+    <div class="main-content">
+
+        <!-- ===== Home Page ===== -->
+
+        <div id="home" class="page active">
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <h1>Welcome to Galaxy Mobile.pk</h1>
+
+                    <p>Best mobile phones at affordable prices in Pakistan</p>
+
+                    <a href="#" onclick="showPage('products')" class="btn">Shop Now</a>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="container">
+
+                <h2 class="section-title">Featured Mobiles</h2>
+
+                <div class="mobile-grid">
+
+                    <!-- Mobile 1 -->
+
+                    <div class="mobile-card">
+
+                        <img src="https://m.media-amazon.com/images/I/71GLMJ7TQiL._SL1500_.jpg" alt="Samsung Galaxy S21" class="mobile-img">
+
+                        <div class="mobile-info">
+
+                            <h3 class="mobile-name">Samsung Galaxy S21</h3>
+
+                            <p class="mobile-price">PKR 150,000</p>
+
+                            <p class="mobile-desc">6.2-inch Dynamic AMOLED, 128GB Storage, Triple Camera</p>
+
+                            <a href="#" onclick="showPage('contact')" class="btn">Buy Now</a>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Mobile 2 -->
+
+                    <div class="mobile-card">
+
+                        <img src="https://m.media-amazon.com/images/I/71cQWYVtcBL._SL1500_.jpg" alt="iPhone 13 Pro" class="mobile-img">
+
+                        <div class="mobile-info">
+
+                            <h3 class="mobile-name">iPhone 13 Pro</h3>
+
+                            <p class="mobile-price">PKR 220,000</p>
+
+                            <p class="mobile-desc">6.1-inch Super Retina XDR, 128GB, A15 Bionic Chip</p>
+
+                            <a href="#" onclick="showPage('contact')" class="btn">Buy Now</a>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Mobile 3 -->
+
+                    <div class="mobile-card">
+
+                        <img src="https://m.media-amazon.com/images/I/71geVdy6-OS._SL1500_.jpg" alt="OnePlus 9 Pro" class="mobile-img">
+
+                        <div class="mobile-info">
+
+                            <h3 class="mobile-name">OnePlus 9 Pro</h3>
+
+                            <p class="mobile-price">PKR 140,000</p>
+
+                            <p class="mobile-desc">6.7-inch Fluid AMOLED, 256GB, Hasselblad Camera</p>
+
+                            <a href="#" onclick="showPage('contact')" class="btn">Buy Now</a>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <!-- Mobile 4 -->
+
+                    <div class="mobile-card">
+
+                        <img src="https://m.media-amazon.com/images/I/71ZOtNdaZCL._SL1500_.jpg" alt="Xiaomi Mi 11" class="mobile-img">
+
+                        <div class="mobile-info">
+
+                            <h3 class="mobile-name">Xiaomi Mi 11</h3>
+
+                            <p class="mobile-price">PKR 95,000</p>
+
+                            <p class="mobile-desc">6.81-inch AMOLED, 128GB, Snapdragon 888</p>
+
+                            <a href="#" onclick="showPage('contact')" class="btn">Buy Now</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ===== Products Page ===== -->
+
+        <div id="products" class="page">
+
+            <section class="products-container container">
+
+                <h2 class="section-title">All Mobiles (200+)</h2>
+
+                <div class="mobile-grid">
+
+                    <!-- Sample Products (Repeat as needed) -->
+
+                    <div class="mobile-card">
+
+                        <img src="https://m.media-amazon.com/images/I/71GLMJ7TQiL._SL1500_.jpg" alt="Samsung Galaxy S21" class="mobile-img">
+
+                        <div class="mobile-info">
+
+                            <h3 class="mobile-name">Samsung Galaxy S21</h3>
+
+                            <p class="mobile-price">PKR 150,000</p>
+
+                            <p class="mobile-desc">6.2-inch Dynamic AMOLED, 128GB Storage, Triple Camera</p>
+
+                            <a href="#" onclick="showPage('contact')" class="btn">Buy Now</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="mobile-card">
+
+                        <img src="https://m.media-amazon.com/images/I/71cQWYVtcBL._SL1500_.jpg" alt="iPhone 13 Pro" class="mobile-img">
+
+                        <div class="mobile-info">
+
+                            <h3 class="mobile-name">iPhone 13 Pro</h3>
+
+                            <p class="mobile-price">PKR 220,000</p>
+
+                            <p class="mobile-desc">6.1-inch Super Retina XDR, 128GB, A15 Bionic Chip</p>
+
+                            <a href="#" onclick="showPage('contact')" class="btn">Buy Now</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Add more products here -->
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ===== About Page ===== -->
+
+        <div id="about" class="page">
+
+            <section class="about-content container">
+
+                <h2>About Galaxy Mobile.pk</h2>
+
+                <p>Welcome to <strong>Galaxy Mobile.pk</strong>, the best mobile shop in Pakistan! We are a trusted and honest business located in <strong>Gujrat, Punjab, Pakistan</strong>.</p>
+
+                <p>We offer a wide range of smartphones at competitive prices. Our shop is known for its reliability and excellent customer service.</p>
+
+                <p>With over <strong>200+ mobile models</strong> available, we ensure that you find the perfect device for your needs.</p>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ===== Contact Page ===== -->
+
+        <div id="contact" class="page">
+
+            <section class="contact-content container">
+
+                <h2 class="section-title">Contact Us</h2>
+
+                <div class="contact-info">
+
+                    <div class="contact-card">
+
+                        <i class="fas fa-map-marker-alt"></i>
+
+                        <h3>Address</h3>
+
+                        <p>Gujrat, Punjab, Pakistan</p>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <i class="fas fa-phone"></i>
+
+                        <h3>Phone</h3>
+
+                        <a href="https://wa.me/923344829953">+92 3344829953 (WhatsApp)</a>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <i class="fas fa-envelope"></i>
+
+                        <h3>Email</h3>
+
+                        <a href="mailto:faisalaslam9953@gmail.com">faisalaslam9953@gmail.com</a>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-form">
+
+                    <form>
+
+                        <div class="form-group">
+
+                            <label for="name">Your Name</label>
+
+                            <input type="text" id="name" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="email">Your Email</label>
+
+                            <input type="email" id="email" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">Your Message</label>
+
+                            <textarea id="message" required></textarea>
+
+                        </div>
+
+                        <button type="submit" class="submit-btn">Send Message</button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ===== Sign Up Page ===== -->
+
+        <div id="signup" class="page">
+
+            <section class="auth-container">
+
+                <div class="auth-form">
+
+                    <h2>Create an Account</h2>
+
+                    <form>
+
+                        <div class="form-group">
+
+                            <label for="signup-name">Full Name</label>
+
+                            <input type="text" id="signup-name" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="signup-email">Email Address</label>
+
+                            <input type="email" id="signup-email" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="signup-phone">Phone Number</label>
+
+                            <input type="tel" id="signup-phone" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="signup-password">Password</label>
+
+                            <input type="password" id="signup-password" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="signup-confirm">Confirm Password</label>
+
+                            <input type="password" id="signup-confirm" required>
+
+                        </div>
+
+                        <button type="submit" class="submit-btn">Sign Up</button>
+
+                    </form>
+
+                    <div class="auth-link">
+
+                        <p>Already have an account? <a href="#" onclick="showPage('login')">Login here</a></p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <!-- ===== Login Page ===== -->
+
+        <div id="login" class="page">
+
+            <section class="auth-container">
+
+                <div class="auth-form">
+
+                    <h2>Login to Your Account</h2>
+
+                    <form>
+
+                        <div class="form-group">
+
+                            <label for="login-email">Email Address</label>
+
+                            <input type="email" id="login-email" required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="login-password">Password</label>
+
+                            <input type="password" id="login-password" required>
+
+                        </div>
+
+                        <button type="submit" class="submit-btn">Login</button>
+
+                    </form>
+
+                    <div class="auth-link">
+
+                        <p>Don't have an account? <a href="#" onclick="showPage('signup')">Sign up here</a></p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ===== Footer ===== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-section">
+
+                    <h3>About Us</h3>
+
+                    <p>Galaxy Mobile.pk is the best mobile shop in Pakistan with honest deals.</p>
+
+                </div>
+
+                <div class="footer-section">
+
+                    <h3>Quick Links</h3>
+
+                    <a href="#" onclick="showPage('home')">Home</a>
+
+                    <a href="#" onclick="showPage('products')">Products</a>
+
+                    <a href="#" onclick="showPage('about')">About Us</a>
+
+                    <a href="#" onclick="showPage('contact')">Contact Us</a>
+
+                </div>
+
+                <div class="footer-section">
+
+                    <h3>Contact Info</h3>
+
+                    <p><i class="fas fa-map-marker-alt"></i> Gujrat, Punjab, Pakistan</p>
+
+                    <p><i class="fas fa-phone"></i> +92 3344829953</p>
+
+                    <p><i class="fas fa-envelope"></i> faisalaslam9953@gmail.com</p>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+
+                <p>&copy; 2023 Galaxy Mobile.pk. All Rights Reserved.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ===== JavaScript for Page Navigation ===== -->
+
+    <script>
+
+        function showPage(pageId) {
+
+            // Hide all pages
+
+            document.querySelectorAll('.page').forEach(page => {
+
+                page.classList.remove('active');
+
+            });
+
+            
+
+            // Show the selected page
+
+            document.getElementById(pageId).classList.add('active');
+
+            
+
+            // Scroll to top
+
+            window.scrollTo(0, 0);
+
+            
+
+            return false; // Prevent default anchor behavior
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
